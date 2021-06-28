@@ -99,7 +99,8 @@ inquirer.prompt([
                 return 'You must have at least one table of content items.';
             }
             //Now get the titles
-            for (var i = 0; i < 10; i++) {
+            for (var i = 0; i < 10; i++) 
+            {
                 var neem = "Question " + i;
                 inquirer.prompt([{name: neem, message: "Guess a letter"}]).then(function(response) {
                   console.log("print");
@@ -114,7 +115,7 @@ inquirer.prompt([
                     }
                   }
                 })
-              }
+            }
             return true;
         },
     },
